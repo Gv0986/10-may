@@ -1,0 +1,58 @@
+m:root {
+  --theme-color: #285685;
+  --font-color: black;
+  --shade1: rgba(242, 38, 19, 0.5);
+  --shade2: rgba(0, 255, 255, 0.5);
+}
+
+body {
+  background-color: rgb(251, 246, 246);
+  font-family: Chaucer;
+
+  display: flex;
+  justify-content: center;
+}
+
+.textCont {
+  font-size: 150%;
+  font-color: black;
+  margin-top: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 60%;
+  height: 80%;
+}
+
+div.textCont::after {
+  content: "|";
+  animation: blinky 1s linear infinite;
+}
+
+@keyframes blinky {
+  0% {
+    opacity: 0;
+  }
+  49.9% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99.9% {
+    opacity: 1;
+  }
+}
+
+
+
+
+.song {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  right: 5%;
+  position: absolute;
+}
+.pause {
+  cursor: pointer;
+}
